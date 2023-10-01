@@ -1,0 +1,32 @@
+<tr id="<%= dom_id friend %>">
+  <td>
+    <%= friend.first_name %>
+  </td>
+
+  <td>
+    <%= friend.last_name %>
+  </td>
+
+  <td>
+    <%= friend.email %>
+  </td>
+
+  <td>
+    <%= friend.phone %>
+  </td>
+
+  <td>
+    <%= friend.twitter %>
+  </td>
+
+  <td>
+    <%= link_to "Show", friend %>
+  </td>
+  <td>
+    <%= link_to "Edit", edit_friend_path(friend) %> 
+  </td>
+  <td>
+    <%= button_to "Destroy", friend, method: :delete, class:"btn btn-danger" %>
+  </td>
+
+</tr>
