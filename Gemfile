@@ -2,7 +2,6 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.2"
-gem 'devise', '~> 4.9', '>= 4.9.2'
 gem "rails", "~> 7.0.8"
 gem "sprockets-rails"
 gem "pg", "~> 1.1"
@@ -26,3 +25,5 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem "devise", "~> 4.9"

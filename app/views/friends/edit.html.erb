@@ -6,5 +6,6 @@
 
 <div>
   <%= link_to "Show this friend", @friend, class:"btn btn-secondary" %>
+  <%= button_to "Delete", @friend, method: :delete, class:"btn btn-outline-danger my-3" %>
   <%= link_to "Back to friends", friends_path, class:"btn btn-dark" %>
 </div>

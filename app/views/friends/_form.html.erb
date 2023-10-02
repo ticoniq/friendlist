@@ -32,6 +32,10 @@
   </div>
 
   <div  class="form-group">
+    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value:current_user.id, type: :hidden %>
+  </div>
+
+  <div  class="form-group">
     <%= form.submit class:"btn btn-secondary" %>
   </div>
 <% end %>
